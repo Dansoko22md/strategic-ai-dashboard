@@ -221,9 +221,7 @@ Comprehensive analysis platform including:
 - **Enterprise Audit**: Comprehensive logging and monitoring
 - **Data Retention**: Configurable retention policies
 
-## 🤝 Contributing to the Project
 
-We welcome enterprise-grade contributions that enhance strategic intelligence capabilities.
 
 ### Development Workflow
 1. **Fork Repository**: Create your feature branch from main
