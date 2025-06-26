@@ -64,7 +64,7 @@ Unlike conventional news aggregators, this dashboard delivers **strategic intell
 
 1. **Repository Setup**
    ```bash
-   git clone https://github.com/yourusername/strategic-ai-dashboard.git
+   git clone https://github.com/Dansoko22md/strategic-ai-dashboard.git
    cd strategic-ai-dashboard
    ```
 
