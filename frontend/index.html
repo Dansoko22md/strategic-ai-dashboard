@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic AI Intelligence Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Strategic AI Intelligence Dashboard</h1>
+        <div class="header-meta">
+            <span class="last-updated" id="lastUpdated">Loading...</span>
+            <button class="refresh-btn" onclick="refreshData()" id="refreshBtn">
+                ↻ Refresh
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="dashboard-nav">
+            <button class="nav-btn active" onclick="switchView('executive')">🎯 Executive Dashboard</button>
+            <button class="nav-btn" onclick="switchView('threads')">🔗 Strategic Threads</button>
+            <button class="nav-btn" onclick="switchView('analysis')">📊 Deep Analysis</button>
+        </nav>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            Gathering strategic intelligence...
+        </div>
+
+        <div id="error" class="error" style="display: none;">
+            <h3>⚠️ Intelligence Gathering Failed</h3>
+            <p id="errorMessage">Unable to connect to intelligence sources</p>
+            <button class="refresh-btn" onclick="loadData()" style="margin-top: 1rem;">
+                Try Again
+            </button>
+        </div>
+
+        <div id="content" style="display: none;">
+            <div id="executiveView">
+                <div class="stories-grid" id="storiesGrid"></div>
+            </div>
+
+            <div id="threadsView" style="display: none;">
+                <div class="strategic-threads">
+                    <h2 class="threads-title">🔗 Strategic Threads</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        Analyzing connections between current developments...
+                    </p>
+                    <div id="threadConnections"></div>
+                </div>
+            </div>
+
+            <div id="analysisView" style="display: none;">
+                <div class="strategic-threads">
+                    <h2 class="threads-title">📊 Deep Analysis</h2>
+                    <div id="analysisContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
