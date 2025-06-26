@@ -76,17 +76,15 @@ Unlike conventional news aggregators, this dashboard delivers **strategic intell
 
 3. **Environment Configuration**
    ```bash
-   cp .env.example .env
    # Configure your environment variables
    OPENAI_API_KEY=your_openai_api_key_here
    PORT=3001
-   NODE_ENV=production
    REFRESH_INTERVAL=7200000  # 2 hours in milliseconds
    ```
 
 4. **Service Initialization**
    ```bash
-   npm start
+   node server.js
    ```
 
 5. **Dashboard Access**
@@ -241,12 +239,6 @@ npm install --include=dev
 
 # Start development server with hot reload
 npm run dev
-
-# Run comprehensive test suite
-npm run test
-
-# Generate coverage reports
-npm run test:coverage
 ```
 
 ### Code Quality Standards
@@ -254,24 +246,6 @@ npm run test:coverage
 - **Prettier**: Consistent code formatting across the project
 - **Jest**: Comprehensive unit and integration testing
 - **Husky**: Pre-commit hooks for quality assurance
-
-## 📞 Enterprise Support
-
-### Technical Support
-- **Email**: support@strategic-ai-dashboard.com
-- **Documentation**: Comprehensive guides and API references
-- **Community**: GitHub discussions and issue tracking
-- **Enterprise**: Dedicated support channels for enterprise clients
-
-### Professional Services
-- **Custom Implementation**: Tailored deployment and configuration
-- **Training Programs**: Team onboarding and best practices
-- **Strategic Consulting**: AI landscape analysis and competitive positioning
-- **Maintenance Contracts**: Ongoing support and feature development
-
-## 📜 License & Legal
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for complete details.
 
 ### Third-Party Acknowledgments
 - **OpenAI**: GPT-4 API enabling sophisticated strategic analysis
